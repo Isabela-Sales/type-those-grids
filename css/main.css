@@ -3,7 +3,6 @@ html {
   font-family: Merriweather, serif;
   line-height: 1.5;
   width: inherit;
-
 }
 
 *, *::before, *::after {
@@ -20,7 +19,7 @@ body {
 .banner {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 4rem 4rem;
+  grid-template-rows: 1fr 8rem;
 }
 
 .banner img {
@@ -29,19 +28,11 @@ body {
   grid-row: 1 / -1;
 }
 
-.banner h2 {
+.banner figcaption {
   color: #fff;
   display: grid;
   grid-column: 1;
   grid-row: 2;
-  z-index: 1;
-}
-
-.banner p {
-  color: #fff;
-  display: grid;
-  grid-column: 1;
-  grid-row: 3;
   z-index: 1;
 }
 
