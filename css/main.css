@@ -2,7 +2,6 @@ html {
   box-sizing: border-box;
   font-family: Merriweather, serif;
   line-height: 1.5;
-  width: inherit;
 }
 
 *, *::before, *::after {
@@ -11,24 +10,86 @@ html {
 
 /* font-family: 'Merriweather', serif; */
 
+img {
+  width: 100%;
+}
+
+h1 {
+  margin: 1.5rem 0 1rem;
+  padding: 0 1rem;
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+p {
+  margin: 0 0 1.5rem;
+  padding: 0 1rem;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 0 1rem;
+  margin: 0;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 0 1rem;
+  margin: 1rem 0 0;
+}
+
+dl {
+  padding: 0 1rem;
+  margin: 0;
+}
+
+dl, dt {
+  font-style: italic;
+  padding: 0;
+  margin: 0;
+}
+
+dl, dd {
+  font-style: normal;
+  padding: 0 1rem;
+  margin: 0;
+}
+
 body {
-  margin: 1.5rem;
-  padding: 1.5rem;
+  margin: 0 0 1rem;
+  padding: 0;
+  align-self: center;
+  display: grid;
+  grid-template-areas:
+    "banner"
+    "main";
 }
 
 .banner {
+  margin: .4rem 0;
+  padding: .4rem 0;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 8rem;
+  grid-template-rows: 1fr 4rem;
+  grid-area: banner;
 }
 
 .banner img {
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
 }
 
 .banner figcaption {
+  margin: 0;
+  padding: 0;
   color: #fff;
   display: grid;
   grid-column: 1;
@@ -39,7 +100,8 @@ body {
 main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 1rem;
-  padding: 1rem;
+  margin: 0;
+  padding: 0;
   grid-gap: .75rem;
+  grid-area: main;
 }
